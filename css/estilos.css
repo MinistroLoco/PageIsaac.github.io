@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --color_blanco: #fff;
+  --altura_header: 80px;
+  --padding_left_right: 2rem;
+  --ancho_maximo: 1200px;
+  --gradante-walpaper: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  --color-title: rgb(230, 230, 58);
+  --color--paragraph: bisque;
+  --background-pie: #86A7FC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  background-image: var(--gradante-walpaper), url(../images/marvel-background.jpg);
+  font-family: "Open Sans", sans-serif;
+}
+.home .header {
+  height: var(--altura_header);
+}
+.home .navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 var(--padding_left_right);
+}
+.home .navbar .img-header {
+  height: 100px;
+  width: 200px;
+  background-color: none;
+}
+.home .navbar .ulHeader {
+  width: 100%;
+  position: absolute;
+  top: var(--altura_header);
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  transition: all 0.3s;
+  list-style: none;
+  background-color: #290B08;
+}
+.home .navbar .ulHeader .links {
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.home .navbar .list-icon {
+  cursor: pointer;
+}
+.home .navbar .menu-hamburguesa {
+  display: none;
+}
+.home .navbarchecked + .ulHeader {
+  height: calc(100vh - var(--altura_header));
+}
+
+.body-spidey {
+  background-image: var(--gradante-walpaper), url(../images/spiderman/walpaper.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100px;
+}
+.body-spidey .about {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  gap: 3rem;
+  align-items: start;
+}
+.body-spidey .about .subtitle {
+  color: var(--color-title);
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.body-spidey .about .about_paragraph {
+  line-height: 1.7;
+  color: var(--color--paragraph);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.body-spidey .about .about_main {
+  padding-top: 80px;
+  display: grid;
+  width: 90%;
+  margin: o auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+.body-spidey .about .about_main .about_icons {
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  width: 260px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.body-spidey .about .about_main .about_title {
+  color: var(--color-title);
+}
+.body-spidey .about .about_main .about_icon {
+  width: 40px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
