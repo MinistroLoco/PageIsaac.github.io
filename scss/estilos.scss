@@ -36,11 +36,13 @@
         flex-wrap: wrap;
         position: relative;
         padding: 0 var(--padding_left_right);
+
         .img-header {
             height: 100px;
             width: 200px;
             background-color: none;
         }
+
         .ulHeader {
             width: 100%;
             position: absolute;
@@ -56,24 +58,28 @@
             transition: all .3s;
             list-style: none;
             background-color: #290B08;
+
             .links {
                 font-size: 2em;
                 color: #fff;
                 font-weight: bold;
                 text-decoration: none;
-            
+
             }
         }
+
         .list-icon {
             cursor: pointer;
         }
+
         .menu-hamburguesa {
             display: none;
-            
+
         }
+
         &checked+.ulHeader {
             height: calc(100vh - var(--altura_header));
-        
+
         }
     }
 
@@ -86,16 +92,19 @@
     background-attachment: fixed;
     width: 100%;
     height: 100px;
+
     .about {
         text-align: center;
         font-family: "Roboto", sans-serif;
         gap: 3rem;
         align-items: start;
+
         .subtitle {
             color: var(--color-title);
             font-size: 2rem;
             margin-bottom: 25px;
-        }  
+        }
+
         .about_paragraph {
             line-height: 1.7;
             color: var(--color--paragraph);
@@ -103,6 +112,7 @@
             margin-left: 1rem;
             margin-right: 1rem;
         }
+
         .about_main {
             padding-top: 80px;
             display: grid;
@@ -111,6 +121,7 @@
             gap: 1em;
             overflow: hidden;
             grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+
             .about_icons {
                 display: grid;
                 gap: 1em;
@@ -119,14 +130,16 @@
                 overflow: hidden;
                 margin: 0 auto;
             }
+
             .about_title {
                 color: var(--color-title);
             }
+
             .about_icon {
                 width: 40px;
             }
-            
-        }             
+
+        }
     }
 
     // Cards o tarjetas de spiderman
@@ -141,6 +154,7 @@
         align-content: stretch;
         gap: 0 25em;
         max-width: 750px;
+
         .card-persons {
             width: 400px;
             margin: 20px;
@@ -150,21 +164,26 @@
             box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
             cursor: default;
             transition: all 400ms ease;
+
             .card-persons img {
                 width: 400px;
                 height: 300px;
             }
+
             .card-persons .spiderman {
                 padding: 15px;
                 text-align: center;
+
                 .card-persons .spiderman h3 {
                     font-weight: 400;
                     margin-bottom: 15px;
                 }
+
                 .card-persons .spiderman p {
                     line-height: 1.5;
                     color: #6a6a6a;
                 }
+
                 .card-persons .spiderman a {
                     text-decoration: none;
                     display: inline-block;
@@ -175,12 +194,16 @@
                     border-radius: 4px;
                     transition: all 400ms ease;
                     background-color: #561C24;
-                }&hover {
+                }
+
+                &hover {
                     background: red;
                     color: #fff;
-                }    
-            }            
-        }&hover {
+                }
+            }
+        }
+
+        &hover {
             box-shadow: 5px 5px 20px rgba(190, 22, 22, 0.6);
             transform: translate(y(-6%));
         }
@@ -188,3 +211,224 @@
 }
 
 // Hulk 
+.home-hulk {
+    background-image: url(../images/walpaper-hulk.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100px;
+
+    .carrousel {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+
+        #contentItemCarrousel {
+            border: 2px solid rgb(13, 51, 13);
+            height: 400px;
+            width: 1000px;
+            overflow: hidden;
+        }
+
+        .itemCarrousel {
+            border: 1px solid black;
+            height: 100%;
+            position: relative;
+        }
+
+        .tarjetaCarrousel {
+            height: 100%;
+
+            .imgCarrousel {
+                height: 100%;
+                width: 100%;
+            }
+
+            .flechasCarrousel {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                /* Esto alinea a los elementos en medio */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+
+                .svgCarrousel {
+                    color: white;
+                }
+            }
+
+        }
+
+        #tarjetaCarrousel-1 {
+            background-color: rgb(116, 46, 126);
+        }
+
+        #tarjetaCarrousel-2 {
+            background-color: rgb(43, 172, 60);
+        }
+
+        #tarjetaCarrousel-3 {
+            background-color: rgb(41, 82, 116);
+        }
+    }
+
+}
+
+// 4 fantasticos
+.fantasticos4 {
+    background-image: var(--gradante-walpaper), url(../images/walpaper-4fantasticos.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    .title-container {
+        text-align: center;
+        text-decoration: solid;
+        color: bisque;
+        font-weight: bold;
+        padding: 2rem;
+    }
+
+    .containerF {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 750px 750px;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4";
+        gap: 2rem 5rem;
+        justify-content: center;
+        justify-items: center;
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            width: 400px;
+            height: 680px;
+            margin: 20px;
+            border-radius: 20px;
+            overflow: hidden;
+            background: rgb(20, 174, 176);
+            background: linear-gradient(69deg, rgba(20, 174, 176, 0.8183473218388918) 0%, rgba(20, 123, 156, 1) 4%, rgba(19, 64, 133, 1) 30%, rgba(68, 98, 227, 1) 88%, rgba(19, 29, 120, 1) 100%);
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            cursor: default;
+            transition: all 400ms ease;
+
+            .oceanos1 {
+                padding: 15px;
+                text-align: center;
+                color: white;
+
+                .imgF {
+                    justify-items: center;
+                    width: 400px;
+                    height: 300px;
+                }
+
+                .titleF {
+                    font-weight: 400;
+                    font-size: 1.5em;
+                    margin-bottom: 15px;
+                    color: #fff;
+                }
+
+                .card1,
+                .card2,
+                .card3,
+                .card4 .oceanos1 p {
+                    line-height: 1.5;
+                    color: bisque;
+                }
+                .linkF {
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 10px;
+                    margin-top: 10px;
+                    color: #fff;
+                    border: 1px solid #2fb4cc;
+                    border-radius: 4px;
+                    transition: all 400ms ease;
+                }&hover {
+                    background: steelblue;
+                    color: #fff;
+                }
+                
+
+            }
+
+
+        }
+
+        .card1 {
+            grid-area: "card1";
+        }
+
+        &hover {
+            box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+            transform: translate(y(-3%));
+        }
+
+        .card2 {
+            grid-area: "card2";
+        }
+
+        &hover {
+            box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+            transform: translate(y(-3%));
+        }
+
+        .card3 {
+            grid-area: "card3";
+        }
+
+        &hover {
+            box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+            transform: translate(y(-3%));
+        }
+
+        .card4 {
+            grid-area: "card4";
+        }
+
+        &hover {
+            box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+            transform: translate(y(-3%));
+        }
+
+    }
+    .title-enemies {
+        text-align: center;
+        font-size: 2rem;
+        color: bisque;
+        font-weight: bold;
+    }
+}
+
+// Avengers
+.avengers {
+    background: rgb(58, 138, 180);
+    background: linear-gradient(214deg, rgba(58, 138, 180, 1) 0%, rgba(3, 37, 201, 1) 27%, rgba(0, 0, 0, 1) 96%, rgba(12, 105, 196, 1) 100%);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;   
+    .first-article {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+

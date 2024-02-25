@@ -175,4 +175,217 @@
   transform: translate(y(-6%));
 }
 
+.home-hulk {
+  background-image: url(../images/walpaper-hulk.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100px;
+}
+.home-hulk .carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+.home-hulk .carrousel #contentItemCarrousel {
+  border: 2px solid rgb(13, 51, 13);
+  height: 400px;
+  width: 1000px;
+  overflow: hidden;
+}
+.home-hulk .carrousel .itemCarrousel {
+  border: 1px solid black;
+  height: 100%;
+  position: relative;
+}
+.home-hulk .carrousel .tarjetaCarrousel {
+  height: 100%;
+}
+.home-hulk .carrousel .tarjetaCarrousel .imgCarrousel {
+  height: 100%;
+  width: 100%;
+}
+.home-hulk .carrousel .tarjetaCarrousel .flechasCarrousel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* Esto alinea a los elementos en medio */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.home-hulk .carrousel .tarjetaCarrousel .flechasCarrousel .svgCarrousel {
+  color: white;
+}
+.home-hulk .carrousel #tarjetaCarrousel-1 {
+  background-color: rgb(116, 46, 126);
+}
+.home-hulk .carrousel #tarjetaCarrousel-2 {
+  background-color: rgb(43, 172, 60);
+}
+.home-hulk .carrousel #tarjetaCarrousel-3 {
+  background-color: rgb(41, 82, 116);
+}
+
+.fantasticos4 {
+  background-image: var(--gradante-walpaper), url(../images/walpaper-4fantasticos.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.fantasticos4 .title-container {
+  text-align: center;
+  text-decoration: solid;
+  color: bisque;
+  font-weight: bold;
+  padding: 2rem;
+}
+.fantasticos4 .containerF {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 750px 750px;
+  grid-template-areas: "card1 card2" "card3 card4";
+  gap: 2rem 5rem;
+  justify-content: center;
+  justify-items: center;
+}
+.fantasticos4 .containerF .card1,
+.fantasticos4 .containerF .card2,
+.fantasticos4 .containerF .card3,
+.fantasticos4 .containerF .card4 {
+  width: 400px;
+  height: 680px;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgb(20, 174, 176);
+  background: linear-gradient(69deg, rgba(20, 174, 176, 0.8183473218) 0%, rgb(20, 123, 156) 4%, rgb(19, 64, 133) 30%, rgb(68, 98, 227) 88%, rgb(19, 29, 120) 100%);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.fantasticos4 .containerF .card1 .oceanos1,
+.fantasticos4 .containerF .card2 .oceanos1,
+.fantasticos4 .containerF .card3 .oceanos1,
+.fantasticos4 .containerF .card4 .oceanos1 {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+.fantasticos4 .containerF .card1 .oceanos1 .imgF,
+.fantasticos4 .containerF .card2 .oceanos1 .imgF,
+.fantasticos4 .containerF .card3 .oceanos1 .imgF,
+.fantasticos4 .containerF .card4 .oceanos1 .imgF {
+  justify-items: center;
+  width: 400px;
+  height: 300px;
+}
+.fantasticos4 .containerF .card1 .oceanos1 .titleF,
+.fantasticos4 .containerF .card2 .oceanos1 .titleF,
+.fantasticos4 .containerF .card3 .oceanos1 .titleF,
+.fantasticos4 .containerF .card4 .oceanos1 .titleF {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.fantasticos4 .containerF .card1 .oceanos1 .card1,
+.fantasticos4 .containerF .card1 .oceanos1 .card2,
+.fantasticos4 .containerF .card1 .oceanos1 .card3,
+.fantasticos4 .containerF .card1 .oceanos1 .card4 .oceanos1 p,
+.fantasticos4 .containerF .card2 .oceanos1 .card1,
+.fantasticos4 .containerF .card2 .oceanos1 .card2,
+.fantasticos4 .containerF .card2 .oceanos1 .card3,
+.fantasticos4 .containerF .card2 .oceanos1 .card4 .oceanos1 p,
+.fantasticos4 .containerF .card3 .oceanos1 .card1,
+.fantasticos4 .containerF .card3 .oceanos1 .card2,
+.fantasticos4 .containerF .card3 .oceanos1 .card3,
+.fantasticos4 .containerF .card3 .oceanos1 .card4 .oceanos1 p,
+.fantasticos4 .containerF .card4 .oceanos1 .card1,
+.fantasticos4 .containerF .card4 .oceanos1 .card2,
+.fantasticos4 .containerF .card4 .oceanos1 .card3,
+.fantasticos4 .containerF .card4 .oceanos1 .card4 .oceanos1 p {
+  line-height: 1.5;
+  color: bisque;
+}
+.fantasticos4 .containerF .card1 .oceanos1 .linkF,
+.fantasticos4 .containerF .card2 .oceanos1 .linkF,
+.fantasticos4 .containerF .card3 .oceanos1 .linkF,
+.fantasticos4 .containerF .card4 .oceanos1 .linkF {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.fantasticos4 .containerF .card1 .oceanos1hover,
+.fantasticos4 .containerF .card2 .oceanos1hover,
+.fantasticos4 .containerF .card3 .oceanos1hover,
+.fantasticos4 .containerF .card4 .oceanos1hover {
+  background: steelblue;
+  color: #fff;
+}
+.fantasticos4 .containerF .card1 {
+  grid-area: "card1";
+}
+.fantasticos4 .containerFhover {
+  box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+  transform: translate(y(-3%));
+}
+.fantasticos4 .containerF .card2 {
+  grid-area: "card2";
+}
+.fantasticos4 .containerFhover {
+  box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+  transform: translate(y(-3%));
+}
+.fantasticos4 .containerF .card3 {
+  grid-area: "card3";
+}
+.fantasticos4 .containerFhover {
+  box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+  transform: translate(y(-3%));
+}
+.fantasticos4 .containerF .card4 {
+  grid-area: "card4";
+}
+.fantasticos4 .containerFhover {
+  box-shadow: 30px 20px 50px rgba(0, 0, 0, 0.6);
+  transform: translate(y(-3%));
+}
+.fantasticos4 .title-enemies {
+  text-align: center;
+  font-size: 2rem;
+  color: bisque;
+  font-weight: bold;
+}
+
+.avengers {
+  background: rgb(58, 138, 180);
+  background: linear-gradient(214deg, rgb(58, 138, 180) 0%, rgb(3, 37, 201) 27%, rgb(0, 0, 0) 96%, rgb(12, 105, 196) 100%);
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+}
+.avengers .first-article {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 /*# sourceMappingURL=estilos.css.map */
