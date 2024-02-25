@@ -548,4 +548,54 @@
   grid-area: img3;
 }
 
+@media (min-width: 768px) {
+  .label-hamburguesa {
+    display: none;
+  }
+  .ulHeader {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .links {
+    font-size: 1.5rem;
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .label-hamburguesa {
+    display: none;
+  }
+  .body-spidey {
+    width: 100%;
+    height: 100%;
+  }
+  .header-home {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .about {
+    align-items: start;
+    justify-content: center;
+  }
+  .card-persons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+/* hulk */
+@media (min-width: 768px) {
+  .label-hamburguesa {
+    display: none;
+  }
+  .carrousel {
+    position: relative;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
