@@ -387,5 +387,165 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.avengers .first-article .mb-3 {
+  background: rgb(24, 4, 125);
+  background: linear-gradient(214deg, rgb(24, 4, 125) 3%, rgb(3, 37, 201) 36%, rgb(52, 4, 88) 72%, rgb(12, 105, 196) 100%);
+  border-radius: black 10px;
+}
+.avengers .first-article .mb-3 .card-title {
+  color: #fff;
+  font-weight: bold;
+}
+.avengers .first-article .mb-3 .card-text {
+  color: #fff;
+}
+.avengers .secondArticle {
+  overflow: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avengers .secondArticle .secondArticle h1 {
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.avengers .secondArticle .divAvengers {
+  display: flex;
+  position: center;
+  width: 600px;
+  height: 430px;
+}
+.avengers .secondArticle .divAvengers .divAvengers img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.avengers .secondArticle .divAvengershover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.contactoBody {
+  background-color: #3f3f83;
+  opacity: 0.8;
+  background-image: radial-gradient(#0976c4 0.5px, transparent 0.5px), radial-gradient(#0976c4 0.5px, #3f3f83 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+.contactoBody .form {
+  background-color: #fff;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px --5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contactoBody .form .form_title {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.contactoBody .form .form_paragraph {
+  font-weight: 300;
+}
+.contactoBody .form .form_paragraph .form_link {
+  font-weight: 400;
+  color: #000;
+}
+.contactoBody .form .form_container {
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+.contactoBody .form .form_container .form_submit {
+  background-color: #3866f2;
+  color: #fff;
+  font-family: "roboto", "sans-serif";
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+}
+.contactoBody .form .form_container .form_group {
+  position: relative;
+  --color: #5757577e;
+}
+.contactoBody .form .form_container .form_group .form_line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #3866f2;
+  transform: scale(0);
+  transform: left bottom;
+}
+.contactoBody .form .form_container .form_group .form_label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+.contactoBody .form .form_container .form_group .form_input {
+  position: relative;
+  width: 100%;
+  background: none;
+  color: #706e6e;
+  font-size: 1rem;
+  padding: 0.6em;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+  font-family: "roboto", "sans-serif";
+}
+.contactoBody .form .form_container .form_groupfocus + .form_label,
+.contactoBody .form .form_container .form_group .form_input:not(:placeholder-shown) + .form_label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #3866f2;
+}
+
+.pie {
+  background-color: var(--background-pie);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-areas: "tit  tit  tit" "p    p    p" "img1 img2 img3";
+  align-items: center;
+  justify-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.pie .pie h2 {
+  grid-area: tit;
+}
+.pie .pie .p-footer {
+  grid-area: p;
+}
+.pie .pie .p-footer .pie .icon-pie1 {
+  grid-area: img1;
+}
+.pie .pie .p-footer .pie .icon-pie2 {
+  grid-area: img2;
+}
+.pie .pie .p-footer .pie .icon-pie3 {
+  grid-area: img3;
+}
 
 /*# sourceMappingURL=estilos.css.map */
