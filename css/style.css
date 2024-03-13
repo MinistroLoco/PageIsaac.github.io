@@ -701,9 +701,11 @@
     }
 }
 
+/* Cuatro fantasticos */
 @media (min-width:768px){
     containerF{
         display: flex;
+        flex-wrap: nowrap;
         align-content: center;
     }
 }
