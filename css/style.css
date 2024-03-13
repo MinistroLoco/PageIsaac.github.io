@@ -702,7 +702,7 @@
 }
 
 /* Cuatro fantasticos */
-@media (min-width:768px) {
+@media (min-width:672px) {
     .containerF {
         display: flex;
         flex-direction: column;
