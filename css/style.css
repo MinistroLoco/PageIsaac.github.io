@@ -701,4 +701,11 @@
     }
 }
 
+@media (min-width:768px){
+    containerF{
+        display: flex;
+        align-content: center;
+    }
+}
+
 
