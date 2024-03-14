@@ -44,6 +44,7 @@
     flex-wrap: wrap;
     position: relative;
     padding: 0 var(--padding_left_right);
+    z-index: 10;
 
 }
 
