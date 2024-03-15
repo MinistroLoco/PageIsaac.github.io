@@ -186,8 +186,16 @@
 
 .card-persons .spiderman p {
     line-height: 1.5;
-    color: #6a6a6a;
+    color: rgb(109, 22, 22);
 }
+
+.title2{
+    font-weight: bolder;
+    color: black;
+    font-size: 25px;
+}
+
+
 
 .card-persons .spiderman h3 {
     font-weight: 400;
