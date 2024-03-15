@@ -703,7 +703,6 @@
         justify-content: center;
     }
 
-
 }
 
 /* hulk */
@@ -728,5 +727,13 @@
     .carrousel{
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .container-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: auto;
     }
 }
